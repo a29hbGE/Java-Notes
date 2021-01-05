@@ -1,7 +1,7 @@
 ## MySQL架构
 
 ### 逻辑架构图和执行流程：
-<div align="center"> <img src="https://github.com/lvminghui/Java-Notes/blob/master/docs/imgs/mysql逻辑架构.png"/> </div><br>
+<div align="center"> <img src="https://github.com/a29hbGE/Java-Notes/blob/master/docs/imgs/mysql逻辑架构.png"/> </div><br>
 
 ### 并发控制
 

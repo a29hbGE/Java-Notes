@@ -1,6 +1,6 @@
 # 一 概览
 容器的思维导图：
-<div align="center"> <img src="https://github.com/lvminghui/Java-Notes/blob/master/docs/imgs/1.png"/> </div><br>
+<div align="center"> <img src="https://github.com/a29hbGE/Java-Notes/blob/master/docs/imgs/1.png"/> </div><br>
 
 
 ## Collection
@@ -248,7 +248,7 @@ Node<K,V> next：next就是用于链表的指向。
 所谓**扰动函数**指的就是 HashMap 的 hash 方法。使用 hash 方法也就是扰动函数是为了防止一些实现比较差的 hashCode() 方法 换句话说使用扰动函数之后可以减少碰撞。 
 
 底层存储结构：
-<div align="center"> <img src="https://github.com/lvminghui/Java-Notes/blob/master/docs/imgs/2.png"/> </div><br>
+<div align="center"> <img src="https://github.com/a29hbGE/Java-Notes/blob/master/docs/imgs/2.png"/> </div><br>
 
 
 #### 2.put方法分析
@@ -351,7 +351,7 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 ```
 
 综上put的方法流程图为：
-<div align="center"> <img src="https://github.com/lvminghui/Java-Notes/blob/master/docs/imgs/put方法流程图.png"/> </div><br>
+<div align="center"> <img src="https://github.com/a29hbGE/Java-Notes/blob/master/docs/imgs/put方法流程图.png"/> </div><br>
 
 
 tip： JDK1.7之前的put方法和现在流程不同的地方就是采用头插法插入元素。
@@ -450,7 +450,7 @@ final Node<K,V>[] resize() {
 ```
 
 在扩容时看原hash值新增的那个bit位是1还是0就好了，是0的话索引没有变，是1的话索引变成“原索引+oldCap（旧数组大小）”，下图位resize（）方法示意图： 
-<div align="center"> <img src="https://github.com/lvminghui/Java-Notes/blob/master/docs/imgs/3.png"/> </div><br>
+<div align="center"> <img src="https://github.com/a29hbGE/Java-Notes/blob/master/docs/imgs/3.png"/> </div><br>
 
 
 ## ConcurrentHashMap
@@ -464,7 +464,7 @@ ReentrantLock 来进行加锁，所以每次需要加锁的操作锁住的是一
 个 Segment 是线程安全的，也就实现了全局的线程安全。
 
 结构如图：
-<div align="center"> <img src="https://github.com/lvminghui/Java-Notes/blob/master/docs/imgs/concurrentHashMap7.png"/> </div><br>
+<div align="center"> <img src="https://github.com/a29hbGE/Java-Notes/blob/master/docs/imgs/concurrentHashMap7.png"/> </div><br>
 
 **JDK1.8：**
 
